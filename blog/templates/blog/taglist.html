@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+
+<div id="content">
+    {% block content %}
+
+        <h4><div class="container text-center">
+            {% for tag in tags_list %}
+
+                <ul>        
+                    <span id="tag_pills">
+                        {% block tag_pills %}
+                            {{ block.super }}
+                        {% endblock %}
+                    </span>
+                </ul>
+        
+            {% endfor %}
+        </div></h4>
+
+    {% endblock %}
+</div>

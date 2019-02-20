@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lilit.apps.LilitConfig',
     'scaleup.apps.ScaleupConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [

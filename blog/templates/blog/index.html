@@ -1,0 +1,13 @@
+{% extends 'blog/base_cards.html' %}
+
+<div id="content">
+    {% block content %}
+    
+        <div id="image_cards">
+            {% block image_cards %}
+                {{ block.super }}
+            {% endblock%}
+        </div>
+        
+    {% endblock %}
+</div>

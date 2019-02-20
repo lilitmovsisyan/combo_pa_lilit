@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+<div id="content">
+    {% block content %}
+
+        <span id="tag_pills">
+            {% block tag_pills %}
+                {{ block.super }}
+            {% endblock %}
+        </span>
+      
+
+    {% endblock %}
+</div>

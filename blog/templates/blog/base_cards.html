@@ -1,0 +1,42 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+    <!--IMAGE: single image stacked in cards-->
+    <div id="image_cards">
+        {% block image_cards %}
+            <div class="container">
+                <div class="card-columns">
+                    {% for entry in entries %}
+                        <div class="card border_light text-center bg-transparent">
+                            {% with entry.images.all.first as image %}
+                                <a href="{% url 'project' entry.id entry.title %}" title="See more about the {{ entry.title }} project">
+                                    <img src="{{ image.image.url }}" class="card-img-top" alt="{{ image.image }}">
+                                </a>
+                                <div class="body">
+                                    <a href="{% url 'project' entry.id entry.title %}" title="See more about the {{ entry.title }} project">
+                                        <h4>{{ entry.title }}</h4>
+                                    </a>
+                                    {% comment optional card-text %}<p class="card-text"></p>{% endcomment%}
+                                    
+                                    <h5>
+                                        <div id="tag_pills">
+                                            {% for tag in entry.tags.all %}
+                                                {% block tag_pills %}
+                                                    {{ block.super }}
+                                                {% endblock %}
+                                            {% endfor %}
+                                        </div>
+                                    </h5>
+
+                                </div>
+                            {% endwith %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>        
+        {% endblock %}
+    </div>
+    
+    {% endblock %}
+

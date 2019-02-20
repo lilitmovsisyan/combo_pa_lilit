@@ -1,0 +1,40 @@
+{% extends 'blog/base_carousel.html' %}
+
+<div id="content">
+  {% block content %}
+
+  <div class="container">
+  {% for entry in entries_list %}
+    <div class="row">
+      <div class="col">
+        <a href="{% url 'project' entry.id entry.title %}" title="See more about the {{ entry.title }} project">
+          <h2>{{ entry.title }}</h2>
+        </a>
+        <p>{{ entry.author  }}</p>
+        <p>{{ entry.date_published }}</p>
+        <h4>{{ entry.text }}</h4>
+        <p>
+            {% for tag in entry.tags.all %}
+              <span id="tag_pills">
+                  {% block tag_pills %}
+                      {{ block.super }}
+                  {% endblock %}
+              </span>
+            {% endfor %}
+        </p>
+        
+        <div id="image_or_carousel">
+          {% block carousel %}
+            {{ block.super }}
+          {% endblock carousel %}
+        </div>
+        
+      </div>
+    </div>
+    <br><br><br><br><br>
+
+  {% endfor %}
+  </div>
+
+  {% endblock %}
+</div>
