@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(191, 206, 212);
+}
+
+.card-header {
+    background-color: rgb(195, 217, 235);
+}
+
+.card-text {
+    background-color: aliceblue;
+}

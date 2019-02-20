@@ -1,0 +1,25 @@
+{% extends 'scaleup/base.html' %}
+
+{% block content %}
+  {% block header %}
+    {{ block.super }}
+  {% endblock header %}
+
+  {% block generate_next %}
+    <div id="generate_next" class="card-body">
+
+      <form action="/scaleup/newscale">
+        <input type="radio" name="user" value="beginner" checked> Beginner<br>
+        <input type="radio" name="user" value="lilit"> Lilit<br>
+        <input type="radio" name="user" value="test"> Test<br><br>
+        <input class="btn btn-primary btn-lg" type="submit" value="Gimme a random scale!">
+    
+      </form>
+    </div>
+  {% endblock generate_next%}
+
+  {% block close_card %}
+    {{ block.super }}
+  {% endblock close_card %}
+
+{% endblock content %}

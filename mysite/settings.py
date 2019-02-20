@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'lilit.apps.LilitConfig',
+    'scaleup.apps.ScaleupConfig',
 ]
 
 MIDDLEWARE = [
