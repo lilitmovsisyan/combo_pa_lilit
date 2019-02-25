@@ -26,6 +26,7 @@ SECRET_KEY = '740(6nmwvy(q4v!0@x=%y*kcf9tg1&x^0fx-9(rf75qx=ow-w)'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'localhost',
     'localhost:8000',
     'lilit.pythonanywhere.com',
     ]
