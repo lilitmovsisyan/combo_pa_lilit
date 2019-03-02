@@ -13,7 +13,7 @@ The 'lilit' module provides a landing platform, directing you to the two apps ab
 1. Scaleup: Edit preset scales/users and remove Test dummy user.
 2. 'lilit': link to CV and contact info
 
-(check iniviual app repos for more ideas for improving the apps)
+(check iniviual app repos, 'scaleup' and 'peacock', for more ideas for improving the apps)
 
 
 
