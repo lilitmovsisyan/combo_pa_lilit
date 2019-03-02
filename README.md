@@ -11,11 +11,9 @@ The 'lilit' module provides a landing platform, directing you to the two apps ab
 ## TO DO:
 
 1. Scaleup: Edit preset scales/users and remove Test dummy user.
-2. Blog: fix jumbotron background image.
-3. both: Understand how to host static files better.
-4. 'lilit': link to CV and contact info
+2. 'lilit': link to CV and contact info
 
-(Other ideas for improving the apps are noted elsewhere)
+(check iniviual app repos for more ideas for improving the apps)
 
 
 
